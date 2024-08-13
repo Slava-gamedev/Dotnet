@@ -1,14 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Slava.TaskPlanner.Domain.Logic</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Slava.TaskPlanner.Domain.Logic\Slava.TaskPlanner.Domain.Logic.csproj" />
     <ProjectReference Include="..\Slava.TaskPlanner.Domain.Models\Slava.TaskPlanner.Domain.Models.csproj" />
   </ItemGroup>
 

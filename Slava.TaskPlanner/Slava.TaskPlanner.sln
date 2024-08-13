@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slava.TaskPlanner.ConsoleApp", "Slava.TaskPlanner.ConsoleApp\Slava.TaskPlanner.ConsoleApp.csproj", "{263EC1EF-CA19-44E4-9C6B-8A855FB3DBA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slava.TaskPlanner.ConsoleApp", "Slava.TaskPlanner.ConsoleApp\Slava.TaskPlanner.ConsoleApp.csproj", "{263EC1EF-CA19-44E4-9C6B-8A855FB3DBA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slava.TaskPlanner.Domain.Models", "Slava.TaskPlanner.Domain.Models\Slava.TaskPlanner.Domain.Models.csproj", "{FCDCDBE2-F8A2-42D7-B7F2-FBEB9259F4BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slava.TaskPlanner.Domain.Logic", "Slava.TaskPlanner.Domain.Logic\Slava.TaskPlanner.Domain.Logic.csproj", "{51F5F157-B8E8-434D-AAA9-3E7B5A24AA36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{263EC1EF-CA19-44E4-9C6B-8A855FB3DBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{263EC1EF-CA19-44E4-9C6B-8A855FB3DBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{263EC1EF-CA19-44E4-9C6B-8A855FB3DBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDCDBE2-F8A2-42D7-B7F2-FBEB9259F4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDCDBE2-F8A2-42D7-B7F2-FBEB9259F4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDCDBE2-F8A2-42D7-B7F2-FBEB9259F4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDCDBE2-F8A2-42D7-B7F2-FBEB9259F4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F5F157-B8E8-434D-AAA9-3E7B5A24AA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F5F157-B8E8-434D-AAA9-3E7B5A24AA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F5F157-B8E8-434D-AAA9-3E7B5A24AA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F5F157-B8E8-434D-AAA9-3E7B5A24AA36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
