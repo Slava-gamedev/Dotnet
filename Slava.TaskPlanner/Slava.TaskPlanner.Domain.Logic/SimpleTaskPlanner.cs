@@ -1,20 +1,26 @@
 ﻿using Slava.TaskPlanner.Domain.Models;
+using Slava.TaskPlanner.DataAccess.Abstractions;
 
 namespace Slava.TaskPlanner.Domain.Logic
 {
     public class SimpleTaskPlanner
     {
-        public WorkItem[] CreatePlan(WorkItem[] items)
+        private IWorkItemsRepository _workItemsRepository;
+        public SimpleTaskPlanner(IWorkItemsRepository workItemsRepository)
         {
-            List<WorkItem> workItems = items.ToList();
+            _workItemsRepository = workItemsRepository;
+        }
+        public WorkItem[] CreatePlan()
+        {
+            List<WorkItem> workItems = _workItemsRepository.GetAll().ToList();
 
             workItems.Sort(CompareWorkItemsByPriority);
 
-            WorkItem[] sortetItems = workItems.ToArray();
+            WorkItem[] sortetItems = workItems.Where(x => x.IsCompleted == false).ToArray();
             return sortetItems;
         }
 
-        public static int CompareWorkItemsByPriority(WorkItem firstItem, WorkItem secondItem)
+        public int CompareWorkItemsByPriority(WorkItem firstItem, WorkItem secondItem)
         {
             if(firstItem.Priority > secondItem.Priority)
             {
